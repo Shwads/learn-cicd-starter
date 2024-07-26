@@ -20,3 +20,6 @@ jobs:
 
       - name: Run Go test 
         run: (go test -cover ./...)
+
+      - name: Check files are correctly formatted
+        run: (test -z $(go fmt ./...))
