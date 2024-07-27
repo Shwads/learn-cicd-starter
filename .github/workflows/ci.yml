@@ -43,3 +43,4 @@ jobs:
 
       - name: Run staticcheck
         run: (staticcheck ./...)
+        working-directory: ${{ github.workspace }}
