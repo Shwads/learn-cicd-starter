@@ -45,7 +45,7 @@ jobs:
         run: (go env)
 
       - name: Add Go bin to PATH
-        run: echo "$(go env GOPATH)/bin" >> $GITHUB_PA
+        run: echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
 
       - name: Run staticcheck
         run: (staticcheck ./...)
