@@ -24,6 +24,8 @@ type apiConfig struct {
 //go:embed static/*
 var staticFiles embed.FS
 
+func unused() {}
+
 //This is a useless comment. It does nothing.
 
 func main() {
