@@ -31,12 +31,12 @@ jobs:
     steps:
       - name: Check files are correctly formatted
         run: (test -z $(go fmt ./...))
-
-      - name: Check go env 
-        run: (go env)
       
       - name: Install staticcheck
         run: (go install honnef.co/go/tools/cmd/staticcheck@latest)
+
+      - name: Check go env 
+        run: (go env)
 
       - name: Add Go bin to PATH
         run: echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
